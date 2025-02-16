@@ -63,7 +63,7 @@ const showMynum = () => {
       showResultBox();
     }
     // if time left is less then 3 color of timer will be red.
-    if (numb < 30) {
+    if (numb < 60) {
       timecount.style.color = "red";
       timecount.style.borderColor = "red";
     }
@@ -90,7 +90,7 @@ function showResultBox() {
     " your result is" +
     "</span>";
   name.innerHTML = nameTag;
-  let total_time = Math.abs(300 - numb);
+  let total_time = Math.abs(600 - numb);
   time_tag =
     "<span>" +
     "Total Time Taken : " +
